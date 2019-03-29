@@ -326,11 +326,13 @@ body{
   border-right: 0.5px dotted grey; 
 }
 .active{
-  color: #191890;
+  color: #000000;
   font-weight: 1000;    
   zoom: 1.05;   
 }
-
+.wrap-dot .col{
+    padding: 10px 5px 5px 0px;
+}
 /* Fading animation */
 .fade {
   animation-name: fade;

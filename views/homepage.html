@@ -147,7 +147,7 @@
 
                     <div class="row wrap-dot" style="text-align:center">
                         <span class="dot col" onclick="">
-                            <h3 class="label active">Huawei P30 | P30 Pro Đặt Gạch Quà Đến 7 Triệu</h3>
+                            <h3 class="label active">Huawei P30 | P30 Pro Quà Đến 7 Triệu</h3>
                         </span>
                         <span class="dot col" onclick="currentSlide(2)">
                             <h3 class="label">Galaxy A50 Trả Góp 0% Giá Tốt 6.990.000đ</h3>
@@ -155,7 +155,7 @@
                         <span class="dot col" onclick="currentSlide(3)">
                             <h3 class="label">Lên Đời Samsung Galaxy Trợ Giá Đến 24 Triệu</h3>
                         </span>
-                        <span class="dot col" onclick="currentSlide(4)">
+                        <span class="dot col" onclick=")">
                             <h3 class="label">OPPO Ưu Đãi Giảm Đến 1 Triệu</h3>
                         </span>
                         <span class="dot col" onclick="currentSlide(5)">
@@ -770,6 +770,20 @@
             Chí Minh. Điện thoại: 18001060. Email: cskh@thegioididong.com. Chịu trách nhiệm nội dung: Trần Nhật Linh.
             <a href="/tos">Xem chính sách sử dụng web</a></p>
     </div>
+    <script>
+        $(document).ready(function(){
+    carousel.on('slide.bs.carousel', function (event) {
+
+var active = $(event.target).find('.carousel-inner > .carousel-item .active');
+var from = active.index();
+var next = $(event.relatedTarget);
+var to = next.index();
+var direction = event.direction;
+        console.log(from + " " + to);
+
+});
+        });
+    </script>
     <!-- click xem thêm -->
     <script src="../js/slide.js"></script>
     <!-- Optional JavaScript -->
