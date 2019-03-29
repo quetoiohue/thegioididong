@@ -1,0 +1,9 @@
+.carousel-control-next-icon, 
+.carousel-control-prev-icon{
+    padding: 22px;
+    background-color: #232323;
+    margin-left: 8%;
+}
+.carousel-control-prev-icon{
+    margin-left: -55%;
+}
